@@ -1,0 +1,42 @@
+{
+  "name": "heartbeat",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "prebuild": "expo prebuild --clean",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.1.0",
+    "@react-native-community/slider": "5.2.0",
+    "expo": "~56.0.12",
+    "expo-audio": "~56.0.12",
+    "expo-dev-client": "~56.0.20",
+    "expo-keep-awake": "~56.0.3",
+    "expo-sensors": "~56.0.6",
+    "expo-status-bar": "~56.0.4",
+    "expo-system-ui": "~56.0.5",
+    "react": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-ble-plx": "^3.5.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-volume-manager": "^2.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/react": "~19.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.2",
+    "@typescript-eslint/parser": "^8.58.2",
+    "babel-preset-expo": "~56.0.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.5.0",
+    "typescript": "~6.0.3"
+  }
+}

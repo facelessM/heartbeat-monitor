@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "HeartBeat Monitor",
+    "slug": "heartbeat-monitor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "heartbeat",
+    "splash": {
+      "backgroundColor": "#0d0d0d"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.heartbeat.monitor",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "HeartBeat Monitor uses Bluetooth to connect to your heart rate sensor.",
+        "NSBluetoothPeripheralUsageDescription": "HeartBeat Monitor uses Bluetooth to connect to your heart rate sensor."
+      }
+    },
+    "android": {
+      "package": "com.heartbeat.monitor",
+      "permissions": [
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
+    },
+    "plugins": [
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": false,
+          "neverForLocation": true
+        }
+      ],
+      "expo-audio"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8b871e44-e2f4-4396-87cc-08ef0156564b"
+      }
+    }
+  }
+}
